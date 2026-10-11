@@ -1,0 +1,131 @@
+
+<style>
+.hdplus-article{
+  font-family:'Be Vietnam Pro',Arial,sans-serif;
+  color:#122033;
+  line-height:1.82;
+  font-size:17px;
+  max-width:980px;
+  margin:auto;
+}
+.hdplus-article *{box-sizing:border-box}
+.hdplus-article h1{
+  font-size:34px;
+  line-height:1.18;
+  letter-spacing:-.04em;
+  margin:0 0 14px;
+}
+.hdplus-article h2{
+  font-size:25px;
+  line-height:1.3;
+  letter-spacing:-.03em;
+  margin:30px 0 12px;
+}
+.hdplus-article h3{
+  font-size:20px;
+  line-height:1.4;
+  margin:22px 0 10px;
+}
+.hdplus-article p{margin:0 0 14px}
+.hdplus-article ul,.hdplus-article ol{padding-left:24px;margin:10px 0 18px}
+.hdplus-article li{margin:7px 0}
+.hdplus-article .note,
+.hdplus-article .warning,
+.hdplus-article .checklist,
+.hdplus-article .quick{
+  border-radius:18px;
+  padding:16px 18px;
+  margin:18px 0;
+}
+.hdplus-article .note{background:#f1f7ff;border-left:5px solid #5aa3df}
+.hdplus-article .warning{background:#fff4e6;border-left:5px solid #f59e0b}
+.hdplus-article .checklist{background:#f0fbf4;border-left:5px solid #22c55e}
+.hdplus-article .quick{background:#f7f8fb;border-left:5px solid #64748b}
+.hdplus-article code{
+  background:#eef3f8;
+  padding:2px 7px;
+  border-radius:8px;
+  font-size:.95em;
+}
+.hdplus-article table{
+  width:100%;
+  border-collapse:separate;
+  border-spacing:0;
+  overflow:hidden;
+  border-radius:16px;
+  margin:16px 0 22px;
+  border:1px solid #dbe6f0;
+}
+.hdplus-article th,.hdplus-article td{
+  padding:12px;
+  border-bottom:1px solid #dbe6f0;
+  vertical-align:top;
+}
+.hdplus-article th{background:#eef6fb;text-align:left}
+.hdplus-article tr:last-child td{border-bottom:0}
+@media(max-width:620px){
+  .hdplus-article{font-size:17px;line-height:1.88;padding:0 2px}
+  .hdplus-article h1{font-size:30px}
+  .hdplus-article h2{font-size:24px}
+  .hdplus-article h3{font-size:20px}
+  .hdplus-article table{display:block;overflow-x:auto}
+}
+</style>
+
+<article class="hdplus-article">
+
+<p><b>Lĩnh vực:</b> Camera analog</p>
+<div style="text-align:center;margin:20px 0;"><img src="https://raw.githubusercontent.com/slingtinh/hungtran-downloads/main/assets/guides/kiem-tra-mat-hinh-camera-analog/kiem-tra-jack-bnc.webp" alt="Kiểm tra đầu nối BNC" style="max-width:100%;height:auto;border-radius:8px;" loading="lazy"/><div style="color:#666;font-size:13px;margin-top:8px;">Kiểm tra đầu nối BNC</div></div>
+
+<div class="note"><b>Mục tiêu bài học:</b> hướng dẫn nhân viên xử lý lỗi một hoặc nhiều mắt camera analog bị mất hình, nhiễu hình, hình chập chờn.</div>
+<h2>1. Các dạng mất hình thường gặp</h2>
+<ul>
+<li>Một mắt camera mất hình hoàn toàn.</li>
+<li>Nhiều mắt mất hình cùng lúc.</li>
+<li>Hình bị sọc, nhiễu, nhảy hình.</li>
+<li>Ban ngày có hình, ban đêm mất hình.</li>
+<li>Đầu ghi báo “No Video” hoặc “Video Loss”.</li>
+</ul>
+
+<div style="text-align:center;margin:20px 0;"><img src="https://raw.githubusercontent.com/slingtinh/hungtran-downloads/main/assets/guides/kiem-tra-mat-hinh-camera-analog/mat-sau-dau-ghi-video-in-bnc.webp" alt="Mặt sau đầu ghi, cổng VIDEO IN BNC" style="max-width:100%;height:auto;border-radius:8px;" loading="lazy"/><div style="color:#666;font-size:13px;margin-top:8px;">Mặt sau đầu ghi, cổng VIDEO IN BNC</div></div><h2>2. Phân loại lỗi trước khi xử lý</h2>
+<table><thead><tr><th>Hiện tượng</th><th>Khả năng nguyên nhân</th><th>Hướng kiểm tra</th></tr></thead><tbody>
+<tr><td>Mất 1 mắt</td><td>Camera, nguồn, dây, jack riêng của mắt đó</td><td>Đổi cổng, đổi nguồn, kiểm tra jack/dây</td></tr>
+<tr><td>Mất nhiều mắt</td><td>Nguồn tổng, đầu ghi, dây nguồn chung</td><td>Kiểm tra adapter/tủ nguồn, cổng đầu ghi</td></tr>
+<tr><td>Nhiễu/sọc</td><td>Jack lỏng, dây kém, nguồn yếu, nhiễu điện</td><td>Bấm lại jack, đổi nguồn, kiểm tra đường dây</td></tr>
+<tr><td>Ban đêm mất</td><td>Nguồn yếu khi hồng ngoại bật</td><td>Kiểm tra nguồn đủ dòng, thay nguồn thử</td></tr>
+</tbody></table>
+<h2>3. Quy trình xử lý mất 1 mắt camera</h2>
+<div class="checklist"><b>Làm theo thứ tự:</b>
+<ol>
+<li>Xác định đúng kênh mất hình trên đầu ghi.</li>
+<li>Kiểm tra nguồn cấp cho camera đó.</li>
+<li>Kiểm tra jack nguồn và jack tín hiệu.</li>
+<li>Đổi camera đó sang cổng khác trên đầu ghi.</li>
+<li>Đổi mắt camera khác vào đường dây đó để phân biệt lỗi camera hay dây.</li>
+<li>Nếu dùng balun, thay thử balun hai đầu.</li>
+</ol></div>
+<h2>4. Quy trình xử lý mất nhiều mắt</h2>
+<p>Nếu nhiều mắt mất cùng lúc, không nên kiểm tra từng mắt ngay. Cần kiểm tra nguồn tổng, đầu ghi và khu vực đi dây chung.</p>
+<ul>
+<li>Kiểm tra adapter/tủ nguồn có hoạt động không.</li>
+<li>Kiểm tra có mất điện ở khu vực cấp nguồn không.</li>
+<li>Kiểm tra đầu ghi có nhận các kênh khác không.</li>
+<li>Kiểm tra sau mất điện/sét/mưa có thiết bị nào hỏng không.</li>
+</ul>
+<h2>5. Mẹo khoanh vùng nhanh</h2>
+<div class="quick">
+<p><b>Đổi cổng đầu ghi:</b> nếu camera mất hình chuyển sang cổng khác vẫn mất, có thể lỗi camera/dây/nguồn. Nếu sang cổng khác lên hình, nghi cổng đầu ghi.</p>
+<p><b>Đổi nguồn:</b> nếu thay nguồn khác camera lên hình ổn, nguồn cũ yếu/hỏng.</p>
+<p><b>Đổi camera thử:</b> nếu camera khác cắm vào đường dây đó vẫn mất, nghi dây/jack/balun.</p>
+</div>
+<h2>6. Lưu ý an toàn và chuyên nghiệp</h2>
+<ul>
+<li>Không tháo đầu ghi hoặc camera khi chưa tắt nguồn nếu không cần thiết.</li>
+<li>Không kết luận đầu ghi hỏng khi chưa thử đổi cổng/đổi nguồn.</li>
+<li>Chụp ảnh hiện trạng trước khi tháo dây để tránh cắm nhầm lại.</li>
+<li>Ghi rõ kênh nào mất, vị trí camera và kết quả thử từng bước.</li>
+</ul>
+<h2>7. Kết luận</h2>
+<p>Lỗi mất hình camera analog phải kiểm tra theo hướng khoanh vùng: mắt camera, nguồn, dây/jack, cổng đầu ghi. Làm đúng thứ tự sẽ tránh thay nhầm thiết bị và giúp khách tin tưởng hơn.</p>
+
+</article>
